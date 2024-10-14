@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('123.webp');
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 100%;
+    max-width: 400px;
+    position: relative;
+    top: -50px;
+    right: -30px;
+
+}
+
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 24px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input[type="text"],
+input[type="password"] {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 100%;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"] {
+    padding: 15px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+input[type="submit"]:hover {
+    background-color: #218838;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus {
+    border-color: #80bdff;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .main {
+        padding: 20px;
+    }
+}
